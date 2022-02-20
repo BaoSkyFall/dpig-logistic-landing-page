@@ -20,50 +20,12 @@ it's part of a repo series designed to create a **Web Application with Angular 1
 </tr>
 </table>
 
-# [Live Demo](#live-demo)
-Here is a working live demo :  https://angular.ganatan.com
-
-<p align="center">
-  <p align="center">
-    <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 13 Example 
-      Application"/>
-    </a>
-  </p>
-</p>
-
-# [Quick start](#quick-start)
-
-```bash
-# choose a repo
-# download the example or clone the repo from github
-git clone https://github.com/ganatan/angular-lazy-loading.git
-
-# download the example or clone the repo from gitlab
-git clone https://gitlab.com/ganatan/angular-lazy-loading.git
-
-# change directory
-cd angular-lazy-loading
-
-# install the repo with npm
-npm install
-
-# start the server
-npm start
-
-```
-in your browser go to [http://localhost:4200](http://localhost:4200) 
 
 
-# [Tutorial](#quick-start)
 
-Here is a step by step Tutorial :  https://www.ganatan.com/tutorials/lazy-loading-with-angular
 
-<p align="center">
-  <a href="https://www.ganatan.com/tutorials/lazy-loading-with-angular">
-    <img src="https://api.ganatan.com/articles/img/tutorial-lazy-loading-avec-angular.png" alt="Demo example"/>
-  </a>
-</p>
+
+
 
 # [Getting started](#getting-started)
 
@@ -82,16 +44,6 @@ Here is a step by step Tutorial :  https://www.ganatan.com/tutorials/lazy-loadin
 ## Tests
 * `npm run test`
 
-# [Author](#author)
-* Author  : danny
-
-## [English Tutorials](#english-tutorials)
-- Installation - https://www.ganatan.com/tutorials/lazy-loading-with-angular
-- step-by-step Tutorials - https://www.ganatan.com/tutorials/en
-
-## [Tutoriels en français](#french-tutorials)
-- Installation - https://www.ganatan.com/tutorials/lazy-loading-avec-angular
-- Tutoriels Etape par étape - https://www.ganatan.com/tutorials
 
 
 
