@@ -1,0 +1,26 @@
+@import 'assets/css/bootstrap.min.css';
+@import 'assets/css/animate.css';
+@import 'assets/css/icofont.min.css';
+@import 'assets/css/magnific-popup.css';
+@import 'assets/css/meanmenu.css';
+ /*@import 'assets/css/owl.carousel.min.css';*/
+/* @import 'assets/css/responsive.css'; */
+/* @import 'assets/css/responsive.css.map'; */
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';*/
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';*/
+
+@import 'assets/css/style.css';
+@import 'assets/css/responsive.css';
+
+body {
+  color: black;
+  font-weight: 400;
+}
+.cursor-pointer{
+  cursor:pointer!important;
+}
+.color-blue{
+  color:#0C2F50!important
+}
+
+

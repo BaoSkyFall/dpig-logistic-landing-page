@@ -1,0 +1,198 @@
+<!--<div class="header-area">-->
+<!--  <div class="container">-->
+<!--      <div class="row align-items-center">-->
+<!--          <div class="col-md-6">-->
+<!--              <div class="header-left">-->
+<!--                  <ul>-->
+<!--                      <li>-->
+<!--                         <a href="mailto:hello@fixa.com">-->
+<!--                          <i class="icofont-ui-message"></i>-->
+<!--                              hello@fixa.com-->
+<!--                         </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                          <a href="tel:+10235415654">-->
+<!--                              <i class="icofont-phone"></i>-->
+<!--                              +10235415654-->
+<!--                          </a>-->
+<!--                      </li>-->
+<!--                  </ul>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-6">-->
+<!--              <div class="header-right">-->
+<!--                  <ul class="header-social">-->
+<!--                      <li>-->
+<!--                          <a [routerLink]=/ target="_blank">-->
+<!--                              <i class="icofont-facebook"></i>-->
+<!--                          </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                          <a [routerLink]=/ target="_blank">-->
+<!--                              <i class="icofont-twitter"></i>-->
+<!--                          </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                          <a [routerLink]=/ target="_blank">-->
+<!--                              <i class="icofont-instagram"></i>-->
+<!--                          </a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                          <a [routerLink]=/ target="_blank">-->
+<!--                              <i class="icofont-linkedin"></i>-->
+<!--                          </a>-->
+<!--                      </li>-->
+<!--                  </ul>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="navbar-area">
+  <!-- For Mobile Device -->
+  <div class="mobile-nav d-flex justify-content-between">
+    <div class="mobile-nav-container">
+      <a [routerLink]="['']" class="logo">
+        <img src="assets/img/logo.png" alt="logo">
+      </a>
+
+      <a  data-bs-toggle="collapse" href="#menuMobile" role="button"
+         aria-expanded="true" aria-controls="menuMobile">  <i class="icon-nav icofont-navigation-menu"></i></a>
+
+    </div>
+
+
+  </div>
+  <div class="collapse multi-collapse " id="menuMobile">
+    <div class="mean-container">
+      <div class="mean-bar">
+        <nav class="mean-nav mt-0">
+          <ul class="navbar-nav ms-auto" style="">
+            <li class="nav-item cursor-pointer">
+              <a [class.active]="routeCurrent=== ''" (click)="navigate('')" class="nav-link ">Home</a></li>
+            <li class="nav-item cursor-pointer">
+              <a [class.active]="routeCurrent=== 'about'" (click)="navigate('about')" class="nav-link">About</a>
+            </li>
+            <li class="nav-item cursor-pointer">
+              <a [class.active]="routeCurrent=== 'services'" (click)="navigate('services')" class="nav-link dropdown-toggle">Services</a>
+              <ul class="dropdown-menu d-block" >
+                <li class="nav-item cursor-pointer">
+                  <a href="service.html" class="nav-link">Seafreight</a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="service-two.html" class="nav-link">Airfreight</a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="ocean-freight.html" class="nav-link">Others</a>
+                </li>
+              </ul>
+              <!--            <a class="mean-expand" [routerLink]=/ style="font-size: 18px">+</a>-->
+            </li>
+            <li class="nav-item cursor-pointer">
+              <a [routerLink]="['']" class="nav-link dropdown-toggle">Workers</a>
+              <ul class="dropdown-menu d-block">
+                <li class="nav-item cursor-pointer">
+                  <a href="worker.html" class="nav-link">Workers One</a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="worker-two.html" class="nav-link">Workers Two</a>
+                </li>
+              </ul>
+              <!--            <a class="mean-expand" [routerLink]=/ style="font-size: 18px">+</a>-->
+            </li>
+            <li class="nav-item mean-last">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- For Desktop Device -->
+  <div class="main-nav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo cursor-pointer" (click)="navigate('')">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item cursor-pointer">
+              <a [class.active]="routeCurrent=== ''" (click)="navigate('')"  class="nav-link">Home</a>
+
+            </li>
+            <li  class="nav-item cursor-pointer">
+              <a [class.active]="routeCurrent==='about'" (click)="navigate('about')"   class="nav-link">About</a>
+            </li>
+            <li class="nav-item cursor-pointer">
+              <a  [class.active]="routeCurrent.includes('services')" (click)="navigate('services')" class="nav-link dropdown-toggle">Services</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item cursor-pointer">
+                  <a [class.active]="routeCurrent.includes('seafrieght')" [routerLink]="['','services','seafrieght']" class="nav-link">SEAFREIGHT
+                  </a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="service-two.html" class="nav-link">AIRFREIGHT</a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="ocean-freight.html" class="nav-link">OTHERS</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item cursor-pointer">
+              <a [routerLink]="['']" class="nav-link dropdown-toggle">Workers</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item cursor-pointer">
+                  <a href="worker.html" class="nav-link">Workers One</a>
+                </li>
+                <li class="nav-item cursor-pointer">
+                  <a href="worker-two.html" class="nav-link">Workers Two</a>
+                </li>
+              </ul>
+            </li>
+            <!--                      <li class="nav-item cursor-pointer">-->
+            <!--                          <a [routerLink]=/ class="nav-link dropdown-toggle">Pages</a>-->
+            <!--                          <ul class="dropdown-menu">-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="faq.html" class="nav-link">FAQ</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="404.html" class="nav-link">404</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="why-choose.html" class="nav-link">Why Choose Us</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="privacy.html" class="nav-link">Privacy policy</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="terms.html" class="nav-link">Terms & Conditions</a>-->
+            <!--                              </li>-->
+            <!--                          </ul>-->
+            <!--                      </li>-->
+            <!--                      <li class="nav-item cursor-pointer">-->
+            <!--                          <a [routerLink]=/ class="nav-link dropdown-toggle">Blog</a>-->
+            <!--                          <ul class="dropdown-menu">-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="blog.html" class="nav-link">Blog</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="blog-two.html" class="nav-link">Blog Style Two</a>-->
+            <!--                              </li>-->
+            <!--                              <li class="nav-item cursor-pointer">-->
+            <!--                                  <a href="blog-details.html" class="nav-link">Blog Details</a>-->
+            <!--                              </li>-->
+            <!--                          </ul>-->
+            <!--                      </li>-->
+            <li class="nav-item cursor-pointer">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
