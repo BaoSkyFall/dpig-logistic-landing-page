@@ -8,11 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "author": {
-    "name": "danny",
-    "email": "dannyganatan@gmail.com",
-    "url": "https://www.ganatan.com/"
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "13.2.3",
