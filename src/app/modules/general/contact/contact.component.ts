@@ -8,13 +8,13 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent  implements OnInit {
   sendGridConfig = environment.sendGridConfig
   constructor(private fb:FormBuilder,
               private http: HttpClient) { }
   rf = this.fb.group({
     name: ['',Validators.required],
-    email: ['',Validators.required],
+    email: ['',[Validators.required,Validators.email]],
     phoneNumber: ['',Validators.required],
     subject: ['',Validators.required],
     message: ['',Validators.required],
@@ -25,6 +25,7 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     console.log(this.rf.value);
+    this.rf.markAllAsTouched()
     if(this.rf.invalid)
     {
       return
