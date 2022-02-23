@@ -13,7 +13,7 @@ const routes: Routes = [
       .then(mod => mod.HomeModule)
   },
   {
-    path: 'contact',
+    path: 'contact-us',
     loadChildren: () => import('./modules/general/contact/contact.module')
       .then(mod => mod.ContactModule)
   },
@@ -26,6 +26,11 @@ const routes: Routes = [
     path: 'services',
     loadChildren: () => import('./modules/general/services/services.module')
       .then(mod => mod.ServicesModule)
+  },
+  {
+    path: 'workers',
+    loadChildren: () => import('./modules/general/workers/workers.module')
+      .then(mod => mod.WorkersModule)
   },
   {
     path: 'login',

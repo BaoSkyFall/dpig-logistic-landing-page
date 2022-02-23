@@ -89,19 +89,12 @@
               <!--            <a class="mean-expand" [routerLink]=/ style="font-size: 18px">+</a>-->
             </li>
             <li class="nav-item cursor-pointer">
-              <a [routerLink]="['']" class="nav-link dropdown-toggle">Workers</a>
-              <ul class="dropdown-menu d-block">
-                <li class="nav-item cursor-pointer">
-                  <a href="worker.html" class="nav-link">Workers One</a>
-                </li>
-                <li class="nav-item cursor-pointer">
-                  <a href="worker-two.html" class="nav-link">Workers Two</a>
-                </li>
-              </ul>
+              <a [routerLink]="['','workers']" class="nav-link dropdown-toggle">Workers</a>
+
               <!--            <a class="mean-expand" [routerLink]=/ style="font-size: 18px">+</a>-->
             </li>
             <li class="nav-item mean-last">
-              <a href="contact.html" class="nav-link">Contact Us</a>
+              <a [routerLink]="['','contact-us']" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -143,15 +136,7 @@
               </ul>
             </li>
             <li class="nav-item cursor-pointer">
-              <a [routerLink]="['']" class="nav-link dropdown-toggle">Workers</a>
-              <ul class="dropdown-menu">
-                <li class="nav-item cursor-pointer">
-                  <a href="worker.html" class="nav-link">Workers One</a>
-                </li>
-                <li class="nav-item cursor-pointer">
-                  <a href="worker-two.html" class="nav-link">Workers Two</a>
-                </li>
-              </ul>
+              <a [routerLink]="['','workers']" class="nav-link">Workers</a>
             </li>
             <!--                      <li class="nav-item cursor-pointer">-->
             <!--                          <a [routerLink]=/ class="nav-link dropdown-toggle">Pages</a>-->
@@ -188,7 +173,7 @@
             <!--                          </ul>-->
             <!--                      </li>-->
             <li class="nav-item cursor-pointer">
-              <a href="contact.html" class="nav-link">Contact Us</a>
+              <a [routerLink]="['','contact-us']" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>

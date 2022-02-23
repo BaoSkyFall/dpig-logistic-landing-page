@@ -1,12 +1,97 @@
-<div class="row">
-  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-    <p>contact works!</p>
-    <ul>
-      <li><a routerLink="/contact/mailing">Mailing</a></li>
-      <li><a routerLink="/contact/map">Map</a></li>
-    </ul>
-  </div>
-  <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-    <router-outlet></router-outlet>
+
+<!-- Contact Card Section Start -->
+<div class="contact-card-section pt-100 pb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-card">
+          <i class="icofont-phone"></i>
+          <a href="tel:+1012345678">+1012345678</a>
+          <a href="tel:+1087643210">+1087643210</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-card">
+          <i class="icofont-ui-message"></i>
+          <a href="mailto:hello@fixa.com">hello@fixa.com</a>
+          <a href="mailto:contact@fixa.com">contact@fixa.com</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6 offset-lg-0 offset-sm-3">
+        <div class="contact-card">
+          <i class="icofont-location-pin"></i>
+          <ul>
+            <li>28/A, New York, USA</li>
+            <li>32/D, New York, USA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- Contact Card Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact-section contact-style-two pb-100">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 class="color-blue">Ask Any Question</h2>
+      <p class="color-blue">Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet a own blind you ago hand.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="contact-area">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="number" name="number" id="number" class="form-control" required data-error="Please enter your number" placeholder="Phone Number">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="subject" id="subject" class="form-control" required data-error="Please enter your subject" placeholder="Your Subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <textarea name="message" class="message-field" id="message" cols="30" rows="5" required data-error="Please type your message" placeholder="Write Message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 text-center">
+                <button type="submit" class="default-btn contact-btn">
+                  Send Message
+                </button>
+                <div id="msgSubmit" class="h3 alert-text text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
