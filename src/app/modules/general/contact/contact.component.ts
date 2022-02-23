@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, Validators} from "@angular/forms";
+import {environment} from "../../../../environments/environment";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +9,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  sendGridConfig = environment.sendGridConfig
+  constructor(private fb:FormBuilder,
+              private http: HttpClient) { }
+  rf = this.fb.group({
+    name: ['',Validators.required],
+    email: ['',Validators.required],
+    phoneNumber: ['',Validators.required],
+    subject: ['',Validators.required],
+    message: ['',Validators.required],
 
-  constructor() { }
-
+  })
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    console.log(this.rf.value);
+    if(this.rf.invalid)
+    {
+      return
+    }
+    const value ={
+      ...this.rf.value,
+      subject:'Test Subject',
+      email:'baoit128@gmail.com'
+
+    }
+    this.http.post('https://app-dpig-global-logistic.herokuapp.com/contact',value,).subscribe(res=>{
+      console.log(res);
+    },err=>{
+      console.log(err);
+    })
+  }
 }
