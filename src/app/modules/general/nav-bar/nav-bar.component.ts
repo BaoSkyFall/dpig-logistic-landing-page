@@ -8,22 +8,25 @@ import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 })
 export class NavBarComponent implements OnInit {
   routeCurrent: string = '';
-  languageType ='';
+  languageType = '';
+
   constructor(public router: Router,
               private route: ActivatedRoute) {
     this.router.events.subscribe(event => {
-      if(event instanceof NavigationEnd)
-      {
+      if (event instanceof NavigationEnd) {
         this.routeCurrent = event.url.substring(1);
         console.log(this.routeCurrent);
       }
     });
 
-    }
+  }
 
 
   ngOnInit(): void {
-  this.languageType = localStorage.getItem('language') || 'en';
+    const language = localStorage.getItem('language') || 'vi'
+    localStorage.setItem('language', language)
+    this.languageType = language;
+
 
   }
 
@@ -36,6 +39,7 @@ export class NavBarComponent implements OnInit {
   }
 
   changeLanguage() {
-    this.languageType = this.languageType =='en'? 'vi':'en'
+    this.languageType = this.languageType == 'en' ? 'vi' : 'en';
+    localStorage.setItem('language', this.languageType)
   }
 }
