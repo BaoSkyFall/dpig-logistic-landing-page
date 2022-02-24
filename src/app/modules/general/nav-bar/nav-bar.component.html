@@ -136,20 +136,26 @@
             </li>
 
 
-            <li class="nav-item cursor-pointer">
+            <li class="nav-item cursor-pointer mr-3">
               <a [routerLink]="['','contact-us']" class="nav-link">Contact Us</a>
             </li>
-            <li class="nav-item cursor-pointer">
-              <a class="nav-link dropdown-toggle"  id="dropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./assets/img/en-flag.png" width="25px" alt="">
-              </a>
-<!--              <ul class="dropdown-menu d-block" aria-labelledby="dropdownLanguage">-->
-<!--                <li class="nav-item cursor-pointer">-->
-<!--                  <a class="p-1 w-auto">  <img width="25px" src="./assets/img/vi-flag.png" alt=""></a>-->
-<!--                </li>-->
-<!--              </ul>-->
-              <!--            <a class="mean-expand" [routerLink]=/ style="font-size: 18px">+</a>-->
-            </li>
+            <label class="dropdownFlag ml-3">
+
+              <div class="dd-button">
+                <img *ngIf="languageType=='en'" src="./assets/img/en-flag.png" width="25px" alt="">
+                <img *ngIf="languageType=='vi'" src="./assets/img/vi-flag.png" width="25px" alt="">
+              </div>
+
+              <input type="checkbox" class="dd-input" id="test">
+
+              <ul class="dd-menu">
+                <li *ngIf="languageType=='en'" (click)="changeLanguage()">
+                  <img src="./assets/img/vi-flag.png" width="25px" alt=""></li>
+                <li *ngIf="languageType=='vi'" (click)="changeLanguage()">
+                  <img src="./assets/img/en-flag.png" width="25px" alt=""></li>
+              </ul>
+
+            </label>
 
           </ul>
         </div>

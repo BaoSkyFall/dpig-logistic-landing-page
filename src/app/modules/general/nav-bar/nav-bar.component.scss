@@ -1,29 +1,98 @@
 .navbar-area {
 
   .mobile-nav {
-    @media (min-width:1024px) {
-      display:none!important;
+    @media (min-width: 1024px) {
+      display: none !important;
     }
     display: block;
     position: relative;
     width: 100vw;
     height: 50px;
     background: #0C2F50;
-    .logo img{
-      max-height:30px;
+
+    .logo img {
+      max-height: 30px;
     }
-    .icon-nav{
+
+    .icon-nav {
       position: absolute;
-      right:15px;
-      top:15px;
+      right: 15px;
+      top: 15px;
       font-size: 20px;
       color: #FFFF;
     }
   }
 
+  .dropdownFlag {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dd-button {
+    display: inline-block;
+    //border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px 20px 5px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+
+  .dd-button:hover {
+    //background-color: #eeeeee;
+  }
+
+
+  .dd-input {
+    display: none;
+  }
+
+  .dd-menu {
+    z-index:99;
+    position: absolute;
+    top: 100%;
+    //border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #eeeeee;
+    list-style-type: none;
+  }
+
+   .dd-menu {
+    display: none;
+  }
+
+  .dd-input:checked + .dd-menu {
+    display: block;
+  }
+
+  .dd-menu li {
+    padding: 5px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  .dd-button:hover .dd-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+  }
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+
+  .dd-menu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
 
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; // remove the gap so it doesn't close
-}
+
+
