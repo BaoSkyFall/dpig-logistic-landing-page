@@ -1,8 +1,8 @@
 <section class="transport-section transport-style-three pt-100 pb-70">
   <div class="container">
     <div class="section-title text-center">
-      <span class="color-blue">Our Services</span>
-      <h2 class="color-blue">We Provide Products Allover The World by Our Transport Systems</h2>
+      <!--      <span class="color-blue">Our Services</span>-->
+      <h2>{{'services.title'|translate}}</h2>
     </div>
 
     <div class="row">
@@ -12,11 +12,13 @@
             <img src="assets/img/services/1.jpg" alt="transport image">
           </div>
           <div class="transport-text">
-            <h3>Air Freight</h3>
-            <p>A cargo aircraft also known as freight aircraft, freighter, airlifter or cargo jet is a fixed-wing aircraft that is designed.</p>
+            <h3>{{'services.section.title_1'|translate}}</h3>
+            <p>{{'services.section.subtitle_1'|translate}}</p>
+            <p class="mb-0">&nbsp;</p>
 
             <div class="theme-btn">
-              <a [routerLink]="['','services','seafrieght']" class="default-btn">Read More</a>
+              <a [routerLink]="['','services','sea-freight']"
+                 class="default-btn">{{'services.button.readMore' |translate}}</a>
             </div>
           </div>
         </div>
@@ -28,11 +30,14 @@
             <img src="assets/img/services/2.jpg" alt="transport image">
           </div>
           <div class="transport-text">
-            <h3>Road Freight</h3>
-            <p>A cargo aircraft also known as freight aircraft, freighter, airlifter or cargo jet is a fixed-wing aircraft that is designed.</p>
+            <h3>{{'services.section.title_2'|translate}}</h3>
+            <p>{{'services.section.subtitle_2'|translate}}</p>
+            <p class="mb-0">&nbsp;</p>
+
 
             <div class="theme-btn">
-              <a [routerLink]="['','services','seafrieght']" class="default-btn">Read More</a>
+              <a [routerLink]="['','services','road-freight']"
+                 class="default-btn">{{'services.button.readMore' |translate}}</a>
             </div>
           </div>
         </div>
@@ -44,11 +49,12 @@
             <img src="assets/img/services/3.jpg" alt="transport image">
           </div>
           <div class="transport-text">
-            <h3>Ocean Freight</h3>
-            <p>A cargo aircraft also known as freight aircraft, freighter, airlifter or cargo jet is a fixed-wing aircraft that is designed.</p>
+            <h3>{{'services.section.title_3'|translate}}</h3>
+            <p>{{'services.section.subtitle_3'|translate}}</p>
 
             <div class="theme-btn">
-              <a [routerLink]="['','services','seafrieght']" class="default-btn">Read More</a>
+              <a routerLink="['','services','ocean-freight']"
+                 class="default-btn">{{'services.button.readMore' |translate}}</a>
             </div>
           </div>
         </div>
@@ -62,8 +68,8 @@
 <div class="choose-style-two pb-70">
   <div class="container">
     <div class="section-title text-center">
-      <h2 class="color-blue">We are Top Rated Transport Logistic</h2>
-      <p class="color-blue">Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet a own blind you ago hand.</p>
+      <h2 class="color-blue">{{'services.group.title'|translate}}</h2>
+      <!--      <p class="color-blue">Found parents would couldn't said on. That, feedback there made he was may blind you simple, its yet a own blind you ago hand.</p>-->
     </div>
 
     <div class="row align-items-center">
@@ -72,26 +78,26 @@
           <div class="col-lg-12 col-sm-4 wow fadeInUp" data-wow-duration="1s">
             <div class="choose-card">
               <i class="icofont-fast-delivery"></i>
-              <h3>Fast & Safe Delivery</h3>
+              <h3>{{'services.group.fastAndSafeDelivery'|translate}}</h3>
             </div>
           </div>
           <div class="col-lg-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="choose-card">
-              <i class="icofont-ssl-security"></i>
-              <h3>Product Security</h3>
+              <i class="icofont-options"></i>
+              <h3>{{'services.group.perfectSolution'|translate}}</h3>
             </div>
           </div>
           <div class="col-lg-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="choose-card">
-              <i class="icofont-diamond"></i>
-              <h3>Price Oriented </h3>
+              <i class="icofont-money-bag"></i>
+              <h3>{{'services.group.competitivePrices'|translate}} </h3>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-lg-6">
-        <div class="why-choose-image">
+        <div class="why-choose-image d-flex justify-content-center align-items-center">
           <img src="assets/img/why-choose/choose-img.png" alt="why Choose image">
         </div>
       </div>
@@ -101,19 +107,19 @@
           <div class="col-lg-12 col-sm-4">
             <div class="choose-card">
               <i class="icofont-ui-browser"></i>
-              <h3>Secured Payment</h3>
+              <h3>{{'services.group.wideNetwork'|translate}}</h3>
             </div>
           </div>
           <div class="col-lg-12 col-sm-4">
             <div class="choose-card">
               <i class="icofont-live-support"></i>
-              <h3>24/7 Support</h3>
+              <h3>{{'services.group.247Support'|translate}}</h3>
             </div>
           </div>
           <div class="col-lg-12 col-sm-4">
             <div class="choose-card">
               <i class="icofont-like"></i>
-              <h3>Well Experienced</h3>
+              <h3>{{'services.group.enthusiasticStaff'|translate}}</h3>
             </div>
           </div>
         </div>

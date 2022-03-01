@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,7 +12,8 @@ export class NavBarComponent implements OnInit {
   languageType = '';
 
   constructor(public router: Router,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private translate: TranslateService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.routeCurrent = event.url.substring(1);
@@ -40,6 +42,7 @@ export class NavBarComponent implements OnInit {
 
   changeLanguage() {
     this.languageType = this.languageType == 'en' ? 'vi' : 'en';
-    localStorage.setItem('language', this.languageType)
+    localStorage.setItem('language', this.languageType);
+    this.translate.use(this.languageType)
   }
 }

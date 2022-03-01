@@ -5,9 +5,11 @@ import {AppComponent} from './app.component';
 import {NotFoundComponent} from './modules/general/not-found/not-found.component';
 import {AppRoutingModule} from './app-routing.module';
 import {NavBarComponent} from './modules/general/nav-bar/nav-bar.component';
-import {CarouselModule} from 'ngx-owl-carousel-o';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FooterComponent} from './modules/component/footer/footer.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,15 @@ import {FooterComponent} from './modules/component/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -27,4 +37,8 @@ import {FooterComponent} from './modules/component/footer/footer.component';
 export class AppModule {
 
 
+}
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
 }

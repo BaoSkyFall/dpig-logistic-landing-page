@@ -10,6 +10,7 @@ import {AngularFireFunctionsModule} from "@angular/fire/compat/functions";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ErrorMessagesModule} from "../../component/control-messages/error-messages.module";
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {ErrorMessagesModule} from "../../component/control-messages/error-messag
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ErrorMessagesModule
+    ErrorMessagesModule,
+    TranslateModule
 
   ],
   exports: [

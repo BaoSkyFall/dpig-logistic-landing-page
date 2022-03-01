@@ -6,7 +6,7 @@ import {ServicesDetailSeafreightComponent} from "./services-detail-seafreight/se
 
 const routes: Routes = [
   { path: '', component: ServicesComponent },
-  { path: 'seafrieght', component: ServicesDetailSeafreightComponent },
+  { path: 'sea-freight', component: ServicesDetailSeafreightComponent },
 
 ];
 

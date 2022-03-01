@@ -1,11 +1,17 @@
 ::ng-deep {
 
 
+  .owl-theme .owl-nav [class*='owl-'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.owl-theme .owl-nav [class*='owl-']{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+  }
+
+  .owl-carousel .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

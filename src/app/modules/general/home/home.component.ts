@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     autoplay: true,
     dots: false,
     navSpeed: 1000,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 7500,
     autoplaySpeed:1000,
     navText: ['<i class="icofont-rounded-double-left"></i>', '<i class="icofont-rounded-double-right"></i>'],
     nav: true,
@@ -60,6 +60,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scroll(0,0);
     $(".accordion-title").click(function (e) {
       var accordionitem = $(this).attr("data-tab");
       $("#" + accordionitem).slideToggle().parent().siblings().find(".accordion-content").slideUp();

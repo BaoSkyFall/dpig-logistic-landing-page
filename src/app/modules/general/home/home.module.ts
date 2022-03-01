@@ -4,12 +4,14 @@ import {HomeRoutingModule} from './home-routing.module';
 import {HomeComponent} from "./home.component";
 import {CarouselModule} from "ngx-owl-carousel-o";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
     CarouselModule,
+    TranslateModule
   ],
   exports: [
     HomeComponent

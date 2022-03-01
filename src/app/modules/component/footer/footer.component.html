@@ -17,13 +17,13 @@
             <li>
               <i class="icofont-ui-message"></i>
               <a href="mailto:dpiglobal@gmail.com">
-                dpiglobal@gmail.com
+                sales@dpig-logistic.com
               </a>
             </li>
 
             <li>
               <i class="icofont-location-pin"></i>
-              No. 10a, Group 1, Viet Hung Ward, Long Bien District, Hanoi City, Vietnam
+              {{'footer.address'|translate}}
             </li>
           </ul>
 
@@ -46,17 +46,19 @@
 
       <div class="col-lg-3 col-sm-6">
         <div class="footer-widget">
-          <h3>Our Services</h3>
+          <a [routerLink]="['','services']">
+            <h3>{{'footer.services.title'|translate}}
+            </h3>
+          </a>
           <ul>
             <li>
-              <a href="service-details.html">SEAFREIGHT</a>
+              <a [routerLink]="['','services','air-freight']">{{'footer.services.subtitle_1'|translate}}</a>
             </li>
             <li>
-              <a href="service-details.html">AIRFREIGHT
-              </a>
+              <a [routerLink]="['','services','road-freight']">{{'footer.services.subtitle_2'|translate}}</a>
             </li>
             <li>
-              <a href="ocean-freight.html">OTHERS</a>
+              <a [routerLink]="['','services','ocean-freight']">{{'footer.services.subtitle_3'|translate}}</a>
             </li>
           </ul>
         </div>
@@ -64,39 +66,30 @@
 
       <div class="col-lg-3 col-sm-6">
         <div class="footer-widget">
-          <h3>Our Support</h3>
-          <ul>
-            <li>
-              <a href="privacy.html">Privacy & Policy</a>
-            </li>
-            <li>
-              <a href="faq.html">FAQS</a>
-            </li>
-            <li>
-              <a href="terms.html">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-            <li>
-              <a href="about.html">About Us</a>
-            </li>
-          </ul>
+          <h3>{{'footer.supports.title'|translate}}</h3>
+            <ul>
+              <li>
+                <a [routerLink]="['','contact-us']">{{'footer.supports.contact_us'|translate}}</a>
+              </li>
+              <li>
+                <a [routerLink]="['','about-us']">{{'footer.supports.about_us'|translate}}</a>
+              </li>
+            </ul>
         </div>
       </div>
 
       <div class="col-lg-3 col-sm-6">
         <div class="footer-widget">
-          <h3>Quick Links</h3>
+          <h3>{{'footer.quick_links.title'|translate}}</h3>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a [routerLink]="['']">{{'footer.quick_links.home'|translate}}</a>
             </li>
             <li>
-              <a href="about.html">About Us</a>
+              <a [routerLink]="['','about-us']">{{'footer.quick_links.abouts'|translate}}</a>
             </li>
             <li>
-              <a href="service.html"> Our Services </a>
+              <a [routerLink]="['','services']">{{'footer.quick_links.services'|translate}}</a>
           </ul>
         </div>
       </div>
