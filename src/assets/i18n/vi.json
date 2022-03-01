@@ -69,6 +69,29 @@
   "feedback.feedback_1.content": "Cảm ơn đội ngũ DPI Global đã đồng hành cũng chúng tôi trong suốt năm qua. Đó quả thực là một năm đầy thách thức và nhiều khó khăn nữa. Chúng tôi đánh giá rất cao về đội ngũ nhân viên cũng như các dịch vụ nhanh chóng, hiệu quả mà công ty bạn đem đến. DPI Global quả là một viên ngọc hiếm trong thế giới chuỗi cung ứng đầy cạnh tranh như bây giờ",
   "feedback.feedback_2.content": "Đội ngũ DPI Global thật tuyệt vời. Chuyên nghiệp, kịp thời, thân thiện. Họ làm việc liên tục và đưa ra giải pháp cho chúng tôi rất đúng lúc",
 
+  "services_detail": "Services Detail",
+  "services_detail.air_freight": "Vân Tải Hàng Không",
+  "services_detail.road_freight": "Vận Tải Đường Bộ",
+  "services_detail.ocean_freight": "Vân Tải Đường Biển",
+  "services_detail.feature": "Ưu điểm",
+  "services_detail.contact_us": "Liên Hệ",
+  "services_detail.downloadBrochures": "Tài liệu",
+  "services_detail.overview": "Tổng Quan",
+  "services_detail.different": "Tại sao chúng tôi khác biệt?",
+  "services_detail.discover": "Khám phá dịch vụ của chúng tôi",
+  "services_detail.air_freight.overview.content": "Chuyển mình nhanh chóng, đầy thách thức và liên tục thay đổi - vận tải hàng không thúc đẩy chúng tôi sáng tạo và linh hoạt như cách chúng tôi tìm cách cung cấp các dịch vụ thích hợp nhất cho bạn. Năng lực và nhu cầu toàn cầu có thể thay đổi trong nháy mắt nhưng chúng tôi cam kết luôn cung cấp các dịch vụ ổn định, đáng tin cậy để duy trì tính toàn vẹn của chuỗi cung ứng của bạn. Cho dù lô hàng của bạn được vận chuyển bằng máy bay thương mại hay máy bay vận tải chuyên dụng, đội ngũ chuyên gia vận tải hàng không của chúng tôi sẽ cung cấp các giải pháp phù hợp và tối ưu nhất để giải quyết tất cả các thách thức kinh doanh của bạn. Từ châu Á đến châu Âu hay ở khắp mọi nơi, hãy liên hệ ngay với chuyên gia vận tải hàng không DPI Global Logistics - bạn chỉ cần một cú nhấp chuột hoặc một cuộc gọi. Toàn cầu hay địa phương - khi bạn cần dịch vụ vận tải hàng không, DPI Global Logistics có nhiều loại sản phẩm và lựa chọn hoàn hảo nhất để đáp ứng chính xác yêu cầu của bạn. Chúng tôi có một đội ngũ chuyên gia vận tải hàng không giàu kinh nghiệm luôn sẵn sàng làm việc với bạn để đảm bảo hàng hóa được giao đúng thời gian và trong tình trạng hoàn hảo nhất.\n",
+  "services_detail.air_freight.different.content": "Đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực vận tải hàng không của chúng tôi đảm bảo các giải pháp nhanh chóng và đáng tin cậy trong mọi trường hợp",
+  "services_detail.road_freight.discover.content_1": "Các dịch vụ đường bộ trong khu vực của chúng tôi được thiết kế để đáp ứng các yêu cầu cụ thể của thị trường ở Châu Á.",
+  "services_detail.road_freight.discover.content_2": "Giải pháp vận tải đường bộ của chúng tôi tại Châu Á cung cấp dịch vụ FTL và LTL cùng với một loạt các dịch vụ giá trị gia tăng bao gồm phương tiện treo khí nén, theo dõi GPS, giám sát thời gian thực 24/7 và xe tải được kiểm soát nhiệt độ.\n",
+  "services_detail.road_freight.discover.content_3": "Chúng tôi cung cấp dịch vụ vận tải xuyên biên giới giữa Trung Quốc và Hồng Kông, Ma Cao, ASEAN, Mông Cổ và Trung Á.",
+  "services_detail.road_freight.discover.content_4": "Xe tải để hỗ trợ các dịch vụ Thương mại điện tử của bạn giữa Đông Nam Á và Trung Quốc. Và tuyến đường cao tốc dẫn đầu thị trường đến phương Tây của chúng tôi từ Trung Quốc đến Châu Âu.",
+  "services_detail.road_freight.different.content": "Chúng tôi kết hợp thực hiện vận tải với dịch vụ quản lý vận tải để đáp ứng mọi nhu cầu của bạn trên đường. Thông qua mạng lưới tháp điều khiển toàn cầu và công nghệ hiện đại, chúng tôi sẽ giám sát các lô hàng của bạn trong suốt hành trình của chúng và đảm bảo hàng hóa của bạn luôn đi trên tuyến đường hiệu quả nhất. Mạng lưới của chúng tôi cung cấp tính linh hoạt, mức độ dịch vụ tuyệt vời, phân phối nhanh chóng, giảm chi phí trực tiếp/gián tiếp và loại bỏ sự phức tạp của quy trình.",
+  "services_detail.ocean_freight.overview.content": "DPI Global Logistics là một trong những công ty vận tải hàng hóa toàn cầu có uy tín, hoạt động trên một mạng lướt trải khắp thế giới. Các giải pháp phù hợp cho nhu cầu vận chuyển hàng hóa bằng đường biển cụ thể của bạn là trọng tâm trong các dịch vụ của chúng tôi. DPI Global Logistics  cung cấp một loạt các dịch vụ Vận tải đường biển toàn cầu và địa phương linh hoạt cho cả lô hàng LCL và FCL. Các dịch vụ này được hỗ trợ bởi Dịch vụ Quản lý Vận tải Đường biển toàn diện cũng như Dịch vụ Hàng loạt, Giao nhận Dự án, Các Dịch vụ Thuê một phần và Toàn bộ. Với các dịch vụ hàng tuần trên hơn 600 tuyến đường kết nối 10.000 điểm các cặp cảng, hàng hóa của bạn sẽ luôn luôn được vận chuyển theo cách tốt nhất.\u000B\n",
+  "services_detail.ocean_freight.different.content": "Bất kể quy mô doanh nghiệp của bạn như thế nào, đội ngũ chuyên gia tận tình của chúng tôi sẽ luôn đảm bảo rằng hệ thống luôn trong tình trạng có sẵn. Với DPIG Global Logicstics, bạn sẽ luôn được cập nhập về tình trạng hiện tại của các lô hàng một cách nhanh chóng và chính xác nhất.",
+
+
+
+
   "contact": "Liên Hệ",
   "contact.title": "Hãy gửi câu hỏi cho chúng tôi",
   "contact.name.placeholder": "Tên của bạn",

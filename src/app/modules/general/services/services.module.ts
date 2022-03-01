@@ -3,21 +3,27 @@ import { CommonModule } from '@angular/common';
 
 import { ServicesComponent } from './services.component';
 import { ServicesRoutingModule } from './services-routing.module';
-import { ServicesDetailSeafreightComponent } from './services-detail-seafreight/services-detail-seafreight.component';
 import { TranslateModule } from '@ngx-translate/core';
+import {CarouselModule} from "ngx-owl-carousel-o";
+import {ServicesDetailAirFreightComponent} from "./services-detail-air-freight/services-detail-air-freight.component";
+import {ServicesDetailOceanFreightComponent} from "./services-detail-ocean-freight/services-detail-ocean-freight.component";
+import {ServicesDetailRoadFreightComponent} from "./services-detail-road-freight/services-detail-road-freight.component";
 
 @NgModule({
   imports: [
     CommonModule,
     ServicesRoutingModule,
-    TranslateModule
+    TranslateModule,
+    CarouselModule
   ],
   exports: [
     ServicesComponent
   ],
   declarations: [
     ServicesComponent,
-    ServicesDetailSeafreightComponent
+    ServicesDetailAirFreightComponent,
+    ServicesDetailOceanFreightComponent,
+    ServicesDetailRoadFreightComponent
   ],
   providers: [
   ],

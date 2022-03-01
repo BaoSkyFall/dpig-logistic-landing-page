@@ -70,6 +70,28 @@
   "feedback.feedback_2.content": "DPI Global team is amazing. Professional, timely, communicative. They work seamlessly and when troubleshooting is needed, they always find the right solution",
 
 
+  "services_detail": "Services Detail",
+  "services_detail.air_freight": "Air Freight",
+  "services_detail.road_freight": "Road Freight",
+  "services_detail.ocean_freight": "Ocean Freight",
+  "services_detail.feature": "Features",
+  "services_detail.contact_us": "Contact Us",
+  "services_detail.downloadBrochures": "Download Brochures",
+  "services_detail.overview": "OVERVIEW",
+  "services_detail.different": "OUR DIFFERENT",
+  "services_detail.discover": "DISCOVER OUR SERVICES",
+  "services_detail.air_freight.overview.content": "Fast moving, challenging and constantly changing – airfreight spurs us on to be creative and flexible as we seek to deliver the most appropriate services to you. Global capacity and demand can change in the blink of an eye and we are committed to providing stable, reliable services which maintain your supply chain’s integrity. Whether your shipments fly in the bellies of commercial aircraft or require specialist freighter aircraft to move them our team of air freight experts will deliver tailor-made solutions to solve your business challenges. From Asia to Europe and everywhere in between contact your local DPI Global Logistics airfreight expert – they are just a click or call away. Global or regional - when you need an airfreight service, DPI Global Logistics has a range of products and a choice of speeds to precisely match your requirements. We have a team of experienced airfreight experts standing by to work with you to ensure your goods are delivered on time and in tip-top condition.",
+  "services_detail.air_freight.different.content": "Our teams of experienced and skilled expert in airfreight ensure fast and reliable solutions in every circumstances.",
+  "services_detail.road_freight.discover.content_1": "Our regional road services are designed to meet the specific market requirements in Asia.",
+  "services_detail.road_freight.discover.content_2": "Transport solution in Asia provides Full Truck Load (FTL) and Less than Truck Load (LTL) alongside a range of value added services including air suspension vehicles, GPS tracking, 24/7 real-time monitoring and temperature controlled trucks.\n",
+  "services_detail.road_freight.discover.content_3": "We offer Cross Border Trucking between China and Hong Kong, Macau, BLP U-Turn, ASEAN, Mongolia and Central Asia.",
+  "services_detail.road_freight.discover.content_4": "Trucks to support your E-commerce services between South East Asia and China. And our market-leading Highway to the West service from China to Europe.",
+  "services_detail.road_freight.different.content": "We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and state-of-the-art technology, we will monitor your shipments throughout their road journey and ensure your goods are always travelling on the most efficient route. Our network provides flexibility, great service levels, accelerated delivery, reduced direct and indirect costs and takes the complexity out of the proccess.",
+  "services_detail.ocean_freight.overview.content": "DPI Global Logistics is one of the most prestigious global freight forwarders operating within a worldwide network. Customized solutions for your specific ocean freight requirement are at the heart of our services. DPI Global Logistics can offer a flexible range of global and local Ocean Freight services for both Less-Than-Container Load (LCL) and Full-Container Load (FCL) shipments. These are backed by comprehensive Ocean Freight Management Services as well as Break-bulk, Project Forwarding, Partial and Full Charter Services. With weekly services on more than 600 routes connecting 10,000 points port-pairs your freight is in capable hands on the high seas, and beyond.\n",
+  "services_detail.ocean_freight.different.content": "We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and state-of-the-art technology, we will monitor your shipments throughout their road journey and ensure your goods are always travelling on the most efficient route. Our network provides flexibility, great service levels, accelerated delivery, reduced direct and indirect costs and takes the complexity out of the proccess.",
+
+
+
   "contact": "Contact",
   "contact.title": "Ask Any Question",
   "contact.name.placeholder": "Your Name",
