@@ -121,15 +121,15 @@
                  class="nav-link dropdown-toggle">{{('navbar.services'|translate) | titlecase}}</a>
               <ul class="dropdown-menu">
                 <li class="nav-item cursor-pointer">
-                  <a [class.active]="routeCurrent.includes('seafrieght')" [routerLink]="['','services','air-freight']"
+                  <a [class.active]="routeCurrent.includes('air-freight')" [routerLink]="['','services','air-freight']"
                      class="nav-link">{{'services_detail.air_freight'|translate}}
                   </a>
                 </li>
                 <li class="nav-item cursor-pointer">
-                  <a [routerLink]="['','services','road-freight']" class="nav-link">{{'services_detail.road_freight'|translate}}</a>
+                  <a [class.active]="routeCurrent.includes('road-freight')" [routerLink]="['','services','road-freight']" class="nav-link">{{'services_detail.road_freight'|translate}}</a>
                 </li>
                 <li class="nav-item cursor-pointer">
-                  <a [routerLink]="['','services','ocean-freight']" class="nav-link">{{'services_detail.ocean_freight'|translate}}</a>
+                  <a [class.active]="routeCurrent.includes('ocean-freight')" [routerLink]="['','services','ocean-freight']" class="nav-link">{{'services_detail.ocean_freight'|translate}}</a>
                 </li>
 
               </ul>
