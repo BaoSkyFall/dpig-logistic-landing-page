@@ -137,7 +137,7 @@
 
 
             <li class="nav-item cursor-pointer mr-3">
-              <a [routerLink]="['','contact-us']" class="nav-link">{{('navbar.contact'|translate) | titlecase}}</a>
+              <a [class.active]="routeCurrent.includes('contact')"  [routerLink]="['','contact-us']" class="nav-link">{{('navbar.contact'|translate) | titlecase}}</a>
             </li>
             <label class="dropdownFlag ml-3">
 
