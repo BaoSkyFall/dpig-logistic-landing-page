@@ -63,6 +63,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.currentLanguage = this.translateService.currentLang;
     window.scroll(0,0);
     $(".accordion-title").click(function (e) {
       var accordionitem = $(this).attr("data-tab");

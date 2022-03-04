@@ -28,6 +28,7 @@ export class NavBarComponent implements OnInit {
     const language = localStorage.getItem('language') || 'vi'
     localStorage.setItem('language', language)
     this.languageType = language;
+    this.translate.use(this.languageType)
 
 
   }
