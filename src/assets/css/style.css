@@ -1655,7 +1655,7 @@ h3 {
 .footer-area .footer-widget h3::before {
   position: absolute;
   content: '';
-  background: #0C2F50;
+  background: #51a6f5;
   width: 3px;
   height: 100%;
   left: 0px;
@@ -1665,7 +1665,7 @@ h3 {
 .footer-area .footer-widget h3::after {
   position: absolute;
   content: '';
-  background: #0C2F50;
+  background: #51a6f5;
   width: 3px;
   height: 3px;
   left: 0;
