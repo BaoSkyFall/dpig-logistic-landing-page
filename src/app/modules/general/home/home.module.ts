@@ -5,6 +5,7 @@ import {HomeComponent} from "./home.component";
 import {CarouselModule} from "ngx-owl-carousel-o";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {TranslateModule} from "@ngx-translate/core";
+import {BrowserModule} from "@angular/platform-browser";
 
 @NgModule({
   imports: [

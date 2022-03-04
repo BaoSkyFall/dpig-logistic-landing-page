@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
 import * as $ from 'jquery';
-import {Observable} from "rxjs";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
@@ -10,9 +10,12 @@ import {Observable} from "rxjs";
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
+  constructor(private translateService: TranslateService) {
+    this.translateService.onLangChange.subscribe(res=>{
+      this.currentLanguage = res.lang;
+    })
   }
-
+  currentLanguage : string = '';
   owlOption: OwlOptions = {
     loop: true,
     mouseDrag: true,
