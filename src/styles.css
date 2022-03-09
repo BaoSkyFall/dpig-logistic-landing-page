@@ -12,6 +12,10 @@
 @import 'assets/css/style.css';
 @import 'assets/css/responsive.css';
 
+@import '~ngx-toastr/toastr';
+/*@import '~ngx-toastr/toastr-bs4-alert.scss';*/
+
+
 body {
   color: black;
   font-weight: 400;

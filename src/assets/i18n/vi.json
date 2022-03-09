@@ -1,5 +1,8 @@
 {
 
+  "SUCCESS": "THÀNH CÔNG",
+  "SUCCESS.sendEmail": "Gửi thông tin email của bạn thành công",
+
 
   "navbar.home": "Trang chủ",
   "navbar.about": "Giới thiệu",

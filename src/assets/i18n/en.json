@@ -1,5 +1,6 @@
 {
-
+  "SUCCESS": "SUCCESS",
+  "SUCCESS.sendEmail": "Send email successfully",
 
   "navbar.home": "home",
   "navbar.about": "about",

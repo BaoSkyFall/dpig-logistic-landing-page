@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators} from "@angular/forms";
 import {environment} from "../../../../environments/environment";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {ToastrService} from "ngx-toastr";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +13,9 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 export class ContactComponent  implements OnInit {
   sendGridConfig = environment.sendGridConfig
   constructor(private fb:FormBuilder,
-              private http: HttpClient) { }
+              private http: HttpClient,
+              private translate: TranslateService,
+              private toastr: ToastrService) { }
   rf = this.fb.group({
     name: ['',Validators.required],
     email: ['',[Validators.required,Validators.email]],
@@ -36,8 +40,10 @@ export class ContactComponent  implements OnInit {
       email:'baoit128@gmail.com'
 
     }
-    this.http.post('https://app-dpig-global-logistic.herokuapp.com/contact',value,).subscribe(res=>{
+    this.http.post('https://app-dpig-global-logistic.herokuapp.com/contact',value,).subscribe((res:any)=>{
       console.log(res);
+      this.toastr.success('Success');
+      this.rf.reset();
     },err=>{
       console.log(err);
     })
